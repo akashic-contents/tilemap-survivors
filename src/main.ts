@@ -4,6 +4,9 @@ import { GameFieldScene } from "./scene/GameFieldScene";
 import { GameResultScene } from "./scene/GameResultScene";
 
 export function main(param: GameMainParameterObject): void {
+	g.game.vars.gameState = {
+		score: 0
+	}; // ランキング用のプロパティを初期化
 	const timeLimit = param.sessionParameter.totalTimeLimit;
 	const scene = new GameFieldScene({
 		game: g.game,

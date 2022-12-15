@@ -64,7 +64,7 @@ export class GameFieldScene extends g.Scene {
 			scene: this,
 			score: 0,
 			x: 0.05 * g.game.width,
-			width: 0.15 * g.game.width
+			width: 0.2 * g.game.width
 		});
 		this.append(this._scoreEntity);
 		this._timeEntity = new TimeEntity({

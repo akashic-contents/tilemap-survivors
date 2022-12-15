@@ -7,14 +7,13 @@ interface ScoreEntityParameterObject extends g.EParameterObject {
 }
 
 export class ScoreEntity extends g.E {
-	private _score: number;
 	private _scoreLabel: Label;
 	private _ptSprite: g.Sprite;
 
 	constructor(param: ScoreEntityParameterObject) {
 		super(param);
 		const font = font28;
-		this._score = param.score;
+		g.game.vars.gameState.score = param.score;
 		this._scoreLabel = new Label({
 			scene: param.scene,
 			font: font,
@@ -30,12 +29,12 @@ export class ScoreEntity extends g.E {
 	}
 
 	get score(): number {
-		return this._score;
+		return g.game.vars.gameState.score;
 	}
 
 	changeScore(value: number): void {
-		this._score += value;
-		this._scoreLabel.text = `${this._score}`;
+		g.game.vars.gameState.score += value;
+		this._scoreLabel.text = `${g.game.vars.gameState.score}`;
 		this._scoreLabel.invalidate();
 	}
 }

@@ -254,7 +254,7 @@
 	},
 	"environment": {
 		"sandbox-runtime": "3",
-		"niconico": {
+		"nicolive": {
 			"supportedModes": [
 				"single",
 				"ranking"
