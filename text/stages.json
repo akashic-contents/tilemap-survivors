@@ -1,0 +1,136 @@
+{
+    "stage001": {
+        "tileImageAssetId": "autotile1",
+        "tileTextAssetId": "field_001",
+        "emenies": [
+            {
+                "id": "enemy1",
+                "time": 100,
+                "relativeOffset": { "x": 150, "y": 150 },
+                "count": 2
+            },
+            {
+                "id": "enemy1",
+                "time": 150,
+                "relativeOffset": { "x": -150, "y": -150 },
+                "count": 2
+            },
+            {
+                "id": "enemy1",
+                "time": 200,
+                "relativeOffset": { "x": 0, "y": 350 },
+                "count": 3
+            },
+            {
+                "id": "enemy1",
+                "time": 250,
+                "relativeOffset": { "x": -300, "y": 0 },
+                "count": 3
+            },
+            {
+                "id": "enemy1",
+                "time": 350,
+                "relativeOffset": { "x": -400, "y": 200 },
+                "count": 5
+            },
+            {
+                "id": "enemy1",
+                "time": 450,
+                "relativeOffset": { "x": 300, "y": -300 },
+                "count": 5
+            },
+            {
+                "id": "enemy2",
+                "time": 800,
+                "relativeOffset": { "x": -200, "y": -200 },
+                "count": 2
+            },
+            {
+                "id": "enemy2",
+                "time": 900,
+                "relativeOffset": { "x": 200, "y": 200 },
+                "count": 2
+            },
+            {
+                "id": "enemy2",
+                "time": 900,
+                "relativeOffset": { "x": 100, "y": -100 },
+                "count": 1
+            },
+            {
+                "id": "enemy2",
+                "time": 900,
+                "relativeOffset": { "x": -100, "y": 100 },
+                "count": 1
+            }
+        ],
+        "items": [
+            {
+                "id": "shotup",
+                "time": 50,
+                "relativeOffset": { "x": 0, "y": 50 },
+                "count": 3
+            },
+            {
+                "id": "shotup",
+                "time": 75,
+                "relativeOffset": { "x": -250, "y": -250 },
+                "count": 3
+            },
+            {
+                "id": "scoreup1",
+                "time": 100,
+                "relativeOffset": { "x": 50, "y": 50 },
+                "count": 2
+            },
+            {
+                "id": "scoreup1",
+                "time": 100,
+                "relativeOffset": { "x": -150, "y": -50 },
+                "count": 3
+            },
+            {
+                "id": "scoreup1",
+                "time": 400,
+                "relativeOffset": { "x": 350, "y": -150 },
+                "count": 5
+            },
+            {
+                "id": "scoreup1",
+                "time": 400,
+                "relativeOffset": { "x": -150, "y": 350 },
+                "count": 5
+            },
+            {
+                "id": "scoreup2",
+                "time": 800,
+                "relativeOffset": { "x": -350, "y": -350 },
+                "count": 2
+            },
+            {
+                "id": "scoreup2",
+                "time": 800,
+                "relativeOffset": { "x": 350, "y": 350 },
+                "count": 2
+            },
+            {
+                "id": "scoreup3",
+                "time": 1100,
+                "relativeOffset": { "x": 350, "y": 350 },
+                "count": 1
+            },
+            {
+                "id": "scoreup3",
+                "time": 1100,
+                "relativeOffset": { "x": 600, "y": 50 },
+                "count": 1
+            },
+            {
+                "id": "scoreup4",
+                "time": 1400,
+                "relativeOffset": { "x": -500, "y": 100 },
+                "count": 1
+            }
+        ]
+    }
+}

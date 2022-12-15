@@ -1,0 +1,35 @@
+{
+    "dog": {
+        "assetId": "character3",
+        "name": "犬",
+        "status": {
+            "hp": 80,
+            "attack": 20,
+            "defence": 20,
+            "speed": 27,
+            "critical": 0.1
+        }
+    },
+    "enemy1": {
+        "assetId": "character2",
+        "name": "魔女",
+        "status": {
+            "hp": 50,
+            "attack": 15,
+            "defence": 15,
+            "speed": 20,
+            "critical": 0
+        }
+    },
+    "enemy2": {
+        "assetId": "character1",
+        "name": "兵士",
+        "status": {
+            "hp": 100,
+            "attack": 30,
+            "defence": 15,
+            "speed": 12,
+            "critical": 0
+        }
+    }
+}

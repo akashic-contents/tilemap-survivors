@@ -1,0 +1,37 @@
+{
+    "scoreup1": {
+        "type": "score",
+        "assetId": "scoreup1",
+        "name": "スコアアップ+10",
+        "describe": "スコアが10増えます",
+        "score": 10
+    },
+    "scoreup2": {
+        "type": "score",
+        "assetId": "scoreup2",
+        "name": "スコアアップ+50",
+        "describe": "スコアが50増えます",
+        "score": 50
+    },
+    "scoreup3": {
+        "type": "score",
+        "assetId": "scoreup3",
+        "name": "スコアアップ+250",
+        "describe": "スコアが250増えます",
+        "score": 250
+    },
+    "scoreup4": {
+        "type": "score",
+        "assetId": "scoreup4",
+        "name": "スコアアップ+1000",
+        "describe": "スコアが1000増えます",
+        "score": 1000
+    },
+    "shotup": {
+        "type": "weapon",
+        "assetId": "shotup",
+        "name": "エネルギー弾",
+        "describe": "前方に向かってエネルギー弾を発射します",
+        "weaponId": "shot"
+    }
+}
