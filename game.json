@@ -255,10 +255,7 @@
 	"environment": {
 		"sandbox-runtime": "3",
 		"nicolive": {
-			"supportedModes": [
-				"single",
-				"ranking"
-			]
+			"supportedModes": ["ranking"]
 		}
 	},
 	"globalScripts": [
