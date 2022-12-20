@@ -2,7 +2,7 @@
     "stage001": {
         "tileImageAssetId": "autotile1",
         "tileTextAssetId": "field_001",
-        "emenies": [
+        "enemies": [
             {
                 "id": "enemy1",
                 "time": 100,

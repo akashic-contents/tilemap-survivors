@@ -21,10 +21,10 @@
 stages.jsonに書き込む各プロパティの意味は[Stage.ts](../src/types/Stage.ts)を参照していただければ分かるかと思います。
 
 ### 出現するキャラクターの変更
-出現する敵キャラクターを変更する場合は、以下の例のように[stages.json](../text/stages.json)の `emenies` 配列中の任意要素の `id` を書き換えます。
+出現する敵キャラクターを変更する場合は、以下の例のように[stages.json](../text/stages.json)の `enemies` 配列中の任意要素の `id` を書き換えます。
 利用できる `id` は [characters.json](../text/characters.json)に記載されているキー名のみです。
 ```json
-        "emenies": [
+        "enemies": [
             {
 -               "id": "enemy1",
 +               "id": "enemy2",
@@ -37,10 +37,10 @@ stages.jsonに書き込む各プロパティの意味は[Stage.ts](../src/types/
 ```
 
 ### 敵の出現タイミング変更
-敵キャラクターの出現タイミングを変更する場合は、以下の例のように[stages.json](../text/stages.json)の `emenies` 配列中の任意要素の `time` を書き換えます。
-`time` の単位はフレーム数です。また、`emenies` 配列は `time` の小さい順に並べる前提になっているため、`time`が後ろの要素より大きい値になった場合は、その後ろの要素の後ろに並べ直す必要があります。
+敵キャラクターの出現タイミングを変更する場合は、以下の例のように[stages.json](../text/stages.json)の `enemies` 配列中の任意要素の `time` を書き換えます。
+`time` の単位はフレーム数です。また、`enemies` 配列は `time` の小さい順に並べる前提になっているため、`time`が後ろの要素より大きい値になった場合は、その後ろの要素の後ろに並べ直す必要があります。
 ```json
-        "emenies": [
+        "enemies": [
             {
                 "id": "enemy1",
 -               "time": 100,
@@ -53,10 +53,10 @@ stages.jsonに書き込む各プロパティの意味は[Stage.ts](../src/types/
 ```
 
 ### 敵の出現場所変更
-敵キャラクターの出現場所を変更する場合は、以下の例のように[stages.json](../text/stages.json)の `emenies` 配列中の任意要素の `relativeOffset` を書き換えます。
+敵キャラクターの出現場所を変更する場合は、以下の例のように[stages.json](../text/stages.json)の `enemies` 配列中の任意要素の `relativeOffset` を書き換えます。
 `relativeOffset`の`x`, `y`はプレイヤーキャラクターを原点とするx,y座標を意味していて、`{ "x": 150, "y": 150 }`であればプレイヤーキャラクターに対して(150, 150)程離れた位置に敵が出現することになります。
 ```json
-        "emenies": [
+        "enemies": [
             {
                 "id": "enemy1",
                 "time": 100,
@@ -69,9 +69,9 @@ stages.jsonに書き込む各プロパティの意味は[Stage.ts](../src/types/
 ```
 
 ### 敵の出現個数変更
-敵キャラクターの出現個数を変更する場合は、以下の例のように[stages.json](../text/stages.json)の `emenies` 配列中の任意要素の `count` を書き換えます。
+敵キャラクターの出現個数を変更する場合は、以下の例のように[stages.json](../text/stages.json)の `enemies` 配列中の任意要素の `count` を書き換えます。
 ```json
-        "emenies": [
+        "enemies": [
             {
                 "id": "enemy1",
                 "time": 100,
@@ -84,10 +84,10 @@ stages.jsonに書き込む各プロパティの意味は[Stage.ts](../src/types/
 ```
 
 ### 敵の出現イベント追加
-敵キャラクターの出現イベントを追加する場合は、以下の例のように[stages.json](../text/stages.json)の `emenies` 配列に要素を追加します。
-ただし `emenies` 配列は `time` の小さい順に並べる前提になっているため、要素追加時も `time` 順に並べる必要があります。
+敵キャラクターの出現イベントを追加する場合は、以下の例のように[stages.json](../text/stages.json)の `enemies` 配列に要素を追加します。
+ただし `enemies` 配列は `time` の小さい順に並べる前提になっているため、要素追加時も `time` 順に並べる必要があります。
 ```json
-        "emenies": [
+        "enemies": [
             {
                 "id": "enemy1",
                 "time": 100,
@@ -171,7 +171,7 @@ stages.jsonに書き込む各プロパティの意味は[Stage.ts](../src/types/
 アイテムの出現イベントを追加する場合は、以下の例のように[stages.json](../text/stages.json)の `items` 配列に要素を追加します。
 ただし `items` 配列は `time` の小さい順に並べる前提になっているため、要素追加時も `time` 順に並べる必要があります。
 ```json
-        "emenies": [
+        "enemies": [
             {
                 "id": "shotup",
                 "time": 50,

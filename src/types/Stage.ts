@@ -2,7 +2,7 @@
 export interface Stage {
 	tileImageAssetId: string; // フィールドのマップチップ画像のアセットID。
 	tileTextAssetId: string; // フィールドのマップ情報を記載したテキストのアセットID。
-	emenies: SpawnTiming[]; // フィールド上での敵の出現情報一覧。timeの値が若い順にデータを定義する必要がある。
+	enemies: SpawnTiming[]; // フィールド上での敵の出現情報一覧。timeの値が若い順にデータを定義する必要がある。
 	items: SpawnTiming[]; // フィールド上でのアイテムの出現情報一覧。timeの値が若い順にデータを定義する必要がある。
 }
 
