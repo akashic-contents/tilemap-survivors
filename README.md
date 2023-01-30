@@ -17,14 +17,8 @@ JavaScriptゲームエンジン [Akashic Engine](https://akashic-games.github.io
 
 ## ゲーム開発者向け情報
 
-### Node.js のインストール・利用
-Akashic Engineを利用したこのゲームはTypeScriptで書かれているため、Node.js をインストールする必要があります。
-Node.js のインストール方法については以下の URL を参照してください。
-https://akashic-games.github.io/shin-ichiba/install.html#install-node
-
-インストールした Node.js を利用するために、Windows ユーザの方はコマンドプロンプトや Power Shell 、Mac ユーザの方はターミナルなどの CUI ツールを使う必要があります。
-CUI ツール(コマンドプロンプト)の起動法については以下の URL を参照してください。
-https://akashic-games.github.io/shin-ichiba/install.html#install-akashic-tool
+### 事前準備
+Akashic ゲームの実行・開発には、Node.js のインストールなど事前準備が必要です。初めての方は [こちら](https://akashic-games.github.io/shin-ichiba/install.html) を参照してください。
 
 ### ゲームのビルド
 このゲームはそのままでは実行することができないので、以下のようなコマンドをこのリポジトリで実行してビルドする必要があります。
@@ -40,6 +34,8 @@ npm run build
 ```
 npm start
 ```
+
+コマンド実行後に `http://localhost:3000` をブラウザで開くとゲームを遊ぶことができます。
 
 ### このゲームを改造する場合
 

@@ -2,17 +2,8 @@
 ソースコードを書き換えずデータのみを書き換えてゲームの内容自体を変えてしまうことも可能です。
 ここではデータ書き換えの例を記載していきます。
 
-## 前準備
-データの書き換え前に以下のような前準備が必要になります。既に完了されている方についてはこの節をスキップしていただければと思います。
-
-### Node.js のインストール
-Akashic Engineを利用したこのゲームはTypeScriptで書かれているため、Node.js をインストールする必要があります。
-Node.js のインストール方法と利用方法については以下の URL を参照してください。
-https://akashic-games.github.io/shin-ichiba/install.html
-
-インストールした Node.js を利用するために、Windows ユーザの方はコマンドプロンプトや Power Shell 、Mac ユーザの方はターミナルなどの CUI ツールを使う必要があります。
-CUI ツール(コマンドプロンプト)の起動法については以下の URL を参照してください。
-https://akashic-games.github.io/shin-ichiba/install.html#install-akashic-tool
+## 事前準備
+Akashic ゲームの実行・開発には、Node.js のインストールなど事前準備が必要です。初めての方は [こちら](https://akashic-games.github.io/shin-ichiba/install.html) を参照してください。
 
 ### ゲームのビルド
 このゲームはそのままでは実行することができないので、以下のようなコマンドをこのリポジトリで実行してビルドする必要があります。
@@ -21,6 +12,8 @@ https://akashic-games.github.io/shin-ichiba/install.html#install-akashic-tool
 npm install
 npm run build
 ```
+
+また、`npm start` を実行後、`http://localhost:3000` をブラウザで開くと改造前の状態のゲームを遊ぶことができます。
 
 ## マップ変更
 このゲームでは以下の画像をベースにマップを作成しています。  
