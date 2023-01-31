@@ -2,6 +2,19 @@
 ソースコードを書き換えずデータのみを書き換えてゲームの内容自体を変えてしまうことも可能です。
 ここではデータ書き換えの例を記載していきます。
 
+## 事前準備
+Akashic ゲームの実行・開発には、Node.js のインストールなど事前準備が必要です。初めての方は [こちら](https://akashic-games.github.io/shin-ichiba/install.html) を参照してください。
+
+### ゲームのビルド
+このゲームはそのままでは実行することができないので、以下のようなコマンドをこのリポジトリで実行してビルドする必要があります。
+
+```
+npm install
+npm run build
+```
+
+また、`npm start` を実行後、`http://localhost:3000` をブラウザで開くと改造前の状態のゲームを遊ぶことができます。
+
 ## マップ変更
 このゲームでは以下の画像をベースにマップを作成しています。  
 ![マップ画像](../image/autotile1.png)
@@ -13,7 +26,8 @@
 そのため、0~4の値で別のマップに書き換えることが可能です。例えば、以下のような手順でマップを[`doc/text/field_002.json`](text/field_002.json)のマップに書き換えることができます。
 
 1. [`doc/text/field_002.json`](text/field_002.json)をtextディレクトリに置いて`field_001.json`にリネームする
-2. `npm run update`を実行する
+2. `npm run update` を実行して書き換えを反映させる
+3. `npm start` を実行してゲームを起動する
 
 ## ゲームステージ情報書き換え
 このゲームでは、ゲームステージの情報を[stages.json](../text/stages.json)に記載しています。
@@ -221,7 +235,8 @@ character.jsonに書き込む各プロパティの意味は[Character.ts](../src
     }
 ```
 3. 新規追加したキャラを[stages.json](../text/stages.json)を編集して反映する。反映方法については、前述した「出現するキャラクターの変更」もしくは「敵の出現イベント追加」を参照
-4. `npm run update`を実行する
+4. `npm run update` を実行して書き換えを反映させる
+5. `npm start` を実行してゲームを起動する
 
 ## 新規アイテムの追加
 このゲームでは、全アイテムの情報を[items.json](../text/items.json)に記載しています。
@@ -251,4 +266,9 @@ items.jsonに書き込む各プロパティの意味は[Item.ts](../src/types/It
     }
 ```
 3. 新規追加したアイテムを[stages.json](../text/stages.json)を編集して反映する。反映方法については、前述した「出現するアイテムの変更」もしくは「アイテムの出現イベント追加」を参照
-4. `npm run update`を実行する
+4. `npm run update` を実行して書き換えを反映させる
+5. `npm start` を実行してゲームを起動する
+
+## ゲームの公開方法
+データを書き換えたものをニコ生ゲームとして公開することができます。公開方法については以下のURLを参照してください。
+https://akashic-games.github.io/shin-ichiba/submit.html
