@@ -42,5 +42,12 @@
   "dependencies": {
     "@akashic-extension/akashic-label": "^3.0.1",
     "@akashic-extension/akashic-tile": "^3.0.1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=11.11.0",
+      "onFail": "error"
+    }
   }
 }
